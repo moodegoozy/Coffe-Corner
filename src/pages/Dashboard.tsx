@@ -71,7 +71,7 @@ const Dashboard = () => {
         <div className="sidebar-header">
           <div className="sidebar-logo">
             <Coffee size={24} />
-            <span>قهوة دريبو</span>
+            <span>Coffee Corner</span>
           </div>
         </div>
         <ul className="sidebar-nav">
@@ -165,10 +165,10 @@ const DashboardHome = () => {
   ]
 
   const recentOrders: Order[] = [
-    { id: '#1234', customer: 'أحمد محمد', products: 'دريبو كلاسيك × 2', total: 178, status: 'completed', date: '2026/01/02' },
-    { id: '#1233', customer: 'سارة العلي', products: 'دريبو جولد × 1', total: 129, status: 'pending', date: '2026/01/02' },
-    { id: '#1232', customer: 'خالد الحربي', products: 'دريبو إسبريسو × 3', total: 297, status: 'completed', date: '2026/01/01' },
-    { id: '#1231', customer: 'نورة السالم', products: 'دريبو كابتشينو × 1', total: 109, status: 'cancelled', date: '2026/01/01' },
+    { id: '#1234', customer: 'أحمد محمد', products: 'Corner Classic × 2', total: 178, status: 'completed', date: '2026/01/02' },
+    { id: '#1233', customer: 'سارة العلي', products: 'Corner Gold × 1', total: 129, status: 'pending', date: '2026/01/02' },
+    { id: '#1232', customer: 'خالد الحربي', products: 'Corner Espresso × 3', total: 297, status: 'completed', date: '2026/01/01' },
+    { id: '#1231', customer: 'نورة السالم', products: 'Corner Cappuccino × 1', total: 109, status: 'cancelled', date: '2026/01/01' },
   ]
 
   return (
@@ -238,10 +238,10 @@ const DashboardHome = () => {
 // Products Page
 const ProductsPage = () => {
   const [products, setProducts] = useState<Product[]>([
-    { id: 1, name: 'دريبو كلاسيك', description: 'قهوة عربية أصيلة', price: 89, category: 'قهوة عربية', stock: 150, image: '☕' },
-    { id: 2, name: 'دريبو جولد', description: 'مزيج فاخر كولومبي', price: 129, category: 'قهوة مختصة', stock: 85, image: '✨' },
-    { id: 3, name: 'دريبو إسبريسو', description: 'قوة مضاعفة', price: 99, category: 'إسبريسو', stock: 120, image: '🔥' },
-    { id: 4, name: 'دريبو كابتشينو', description: 'كريمي وناعم', price: 109, category: 'كابتشينو', stock: 95, image: '🥛' },
+    { id: 1, name: 'Corner Classic', description: 'قهوة عربية أصيلة', price: 89, category: 'قهوة عربية', stock: 150, image: '☕' },
+    { id: 2, name: 'Corner Gold', description: 'مزيج فاخر كولومبي', price: 129, category: 'قهوة مختصة', stock: 85, image: '✨' },
+    { id: 3, name: 'Corner Espresso', description: 'قوة مضاعفة', price: 99, category: 'إسبريسو', stock: 120, image: '🔥' },
+    { id: 4, name: 'Corner Cappuccino', description: 'كريمي وناعم', price: 109, category: 'كابتشينو', stock: 95, image: '🥛' },
   ])
   const [showModal, setShowModal] = useState(false)
   const [editingProduct, setEditingProduct] = useState<Product | null>(null)
@@ -433,12 +433,12 @@ const ProductsPage = () => {
 // Orders Page
 const OrdersPage = () => {
   const orders: Order[] = [
-    { id: '#1234', customer: 'أحمد محمد', products: 'دريبو كلاسيك × 2', total: 178, status: 'completed', date: '2026/01/02' },
-    { id: '#1233', customer: 'سارة العلي', products: 'دريبو جولد × 1', total: 129, status: 'pending', date: '2026/01/02' },
-    { id: '#1232', customer: 'خالد الحربي', products: 'دريبو إسبريسو × 3', total: 297, status: 'completed', date: '2026/01/01' },
-    { id: '#1231', customer: 'نورة السالم', products: 'دريبو كابتشينو × 1', total: 109, status: 'cancelled', date: '2026/01/01' },
-    { id: '#1230', customer: 'فهد العتيبي', products: 'دريبو جولد × 2', total: 258, status: 'completed', date: '2025/12/31' },
-    { id: '#1229', customer: 'مريم الشمري', products: 'دريبو كلاسيك × 1', total: 89, status: 'pending', date: '2025/12/31' },
+    { id: '#1234', customer: 'أحمد محمد', products: 'Corner Classic × 2', total: 178, status: 'completed', date: '2026/01/02' },
+    { id: '#1233', customer: 'سارة العلي', products: 'Corner Gold × 1', total: 129, status: 'pending', date: '2026/01/02' },
+    { id: '#1232', customer: 'خالد الحربي', products: 'Corner Espresso × 3', total: 297, status: 'completed', date: '2026/01/01' },
+    { id: '#1231', customer: 'نورة السالم', products: 'Corner Cappuccino × 1', total: 109, status: 'cancelled', date: '2026/01/01' },
+    { id: '#1230', customer: 'فهد العتيبي', products: 'Corner Gold × 2', total: 258, status: 'completed', date: '2025/12/31' },
+    { id: '#1229', customer: 'مريم الشمري', products: 'Corner Classic × 1', total: 89, status: 'pending', date: '2025/12/31' },
   ]
 
   return (
@@ -576,11 +576,11 @@ const SettingsPage = () => {
         <form>
           <div className="form-group">
             <label>اسم المتجر</label>
-            <input type="text" defaultValue="قهوة دريبو" />
+            <input type="text" defaultValue="Coffee Corner" />
           </div>
           <div className="form-group">
             <label>البريد الإلكتروني</label>
-            <input type="email" defaultValue="info@dripo.sa" />
+            <input type="email" defaultValue="info@coffeecorner.sa" />
           </div>
           <div className="form-group">
             <label>رقم الهاتف</label>

@@ -34,7 +34,7 @@ const LandingPage = () => {
   const products = [
     {
       id: 1,
-      name: 'دريبو كلاسيك',
+      name: 'Corner Classic',
       description: 'قهوة عربية أصيلة بنكهة غنية ومميزة',
       price: 89,
       badge: 'الأكثر مبيعاً',
@@ -42,7 +42,7 @@ const LandingPage = () => {
     },
     {
       id: 2,
-      name: 'دريبو جولد',
+      name: 'Corner Gold',
       description: 'مزيج فاخر من أجود حبوب البن الكولومبي',
       price: 129,
       badge: 'جديد',
@@ -50,7 +50,7 @@ const LandingPage = () => {
     },
     {
       id: 3,
-      name: 'دريبو إسبريسو',
+      name: 'Corner Espresso',
       description: 'قوة مضاعفة لعشاق الإسبريسو الأصيل',
       price: 99,
       badge: null,
@@ -58,7 +58,7 @@ const LandingPage = () => {
     },
     {
       id: 4,
-      name: 'دريبو كابتشينو',
+      name: 'Corner Cappuccino',
       description: 'كريمي وناعم مع رغوة حليب مثالية',
       price: 109,
       badge: 'مميز',
@@ -93,7 +93,7 @@ const LandingPage = () => {
     {
       name: 'أحمد محمد',
       role: 'عاشق قهوة',
-      content: 'قهوة دريبو غيرت مفهومي عن القهوة المختصة. نكهة استثنائية وجودة لا مثيل لها!',
+      content: 'Coffee Corner غيرت مفهومي عن القهوة المختصة. نكهة استثنائية وجودة لا مثيل لها!',
       rating: 5,
       avatar: 'أ'
     },
@@ -107,7 +107,7 @@ const LandingPage = () => {
     {
       name: 'خالد الحربي',
       role: 'رائد أعمال',
-      content: 'صباحي لا يكتمل بدون فنجان دريبو. قهوة تعطيك الطاقة والتركيز طوال اليوم.',
+      content: 'صباحي لا يكتمل بدون فنجان Coffee Corner. قهوة تعطيك الطاقة والتركيز طوال اليوم.',
       rating: 5,
       avatar: 'خ'
     }
@@ -122,7 +122,7 @@ const LandingPage = () => {
             <div className="logo-icon">
               <Coffee size={24} />
             </div>
-            <span>قهوة دريبو</span>
+            <span>Coffee Corner</span>
           </div>
           
           <ul className="nav-links">
@@ -240,7 +240,7 @@ const LandingPage = () => {
       {/* Features Section */}
       <section id="features" className="features-section">
         <div className="section-header">
-          <h2 className="section-title">لماذا تختار دريبو؟</h2>
+          <h2 className="section-title">لماذا تختار Coffee Corner؟</h2>
           <p className="section-subtitle">نسعى دائماً لتقديم أفضل تجربة قهوة لعملائنا</p>
         </div>
         <div className="features-grid">
@@ -305,7 +305,7 @@ const LandingPage = () => {
       <footer id="contact" className="footer">
         <div className="footer-container">
           <div className="footer-brand">
-            <h3>☕ قهوة دريبو</h3>
+            <h3>☕ Coffee Corner</h3>
             <p>
               نقدم لكم أجود أنواع القهوة المختصة، محمصة بعناية فائقة من أفضل حبوب البن حول العالم. نسعى لتقديم تجربة قهوة استثنائية في كل فنجان.
             </p>
@@ -337,7 +337,7 @@ const LandingPage = () => {
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Mail size={16} />
-                <span>info@dripo.sa</span>
+                <span>info@coffeecorner.sa</span>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <MapPin size={16} />
@@ -347,7 +347,7 @@ const LandingPage = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© 2026 قهوة دريبو. جميع الحقوق محفوظة</p>
+          <p>© 2026 Coffee Corner. جميع الحقوق محفوظة</p>
           <div className="social-links">
             <a href="#"><Instagram size={18} /></a>
             <a href="#"><Twitter size={18} /></a>
